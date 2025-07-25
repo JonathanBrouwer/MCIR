@@ -84,7 +84,7 @@ mod tests{
 
 
     #[test]
-    #[should_panic("Expecting char. Identifier found")]
+    #[should_panic(expected = "Expecting Character, found identifier")]
     //the transform_ch distinguishes char from other
     fn not_a_character(){
         let src="ascii_code123";
